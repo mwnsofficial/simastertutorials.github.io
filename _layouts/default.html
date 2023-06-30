@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title}} RSS" href="/feed.xml">
+<link rel="icon" href="{{ site.baseurl }}/{{site.favicon}}">
+
+<title>{{ page.title }} | {{site.title}}</title>
+
+{% seo %}
+
+<link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
+
+<!-- custom CSS - Remove this if you don't use it or choose to customize the stylesheet with sass-->
+<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
+<!-- custom CSS end-->
+    
+{% if jekyll.environment == "production" %}       
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.ganalytics}}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '{{site.ganalytics}}');
+</script>
+{% endif %}
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1794381705838564"
+     crossorigin="anonymous"></script>
+
+</head>   
+    
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body class="{{ layout }}">
+
+    
+<!-- Menu Navigation
+================================================== -->
+<div class="navigation-wrap start-header start-style">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+          <a class="navbar-brand text-dark font-weight-bold big d-flex align-items-center" href="{{site.baseurl}}/">
+          {% if site.logo %}
+          <img class="mr-2" src="{{site.baseurl}}/{{site.logo}}" alt="logo"> 
+          {% else %}
+          <span class="d-none d-md-inline-block">{{ site.title }}</span>
+          {% endif %}
+          </a>
+          
+
+          <div class="d-flex align-items-center">
+
+            <a class="d-inline-block social-icon" target="_blank" href="{{site.social.youtube}}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-twitter" viewBox="-35.20005 -41.33325 305.0671 247.9995">
+              <path d="M229.763 25.817c-2.699-10.162-10.65-18.165-20.747-20.881C190.716 0 117.333 0 117.333 0S43.951 0 25.651 4.936C15.554 7.652 7.602 15.655 4.904 25.817 0 44.237 0 82.667 0 82.667s0 38.43 4.904 56.85c2.698 10.162 10.65 18.164 20.747 20.881 18.3 4.935 91.682 4.935 91.682 4.935s73.383 0 91.683-4.935c10.097-2.717 18.048-10.72 20.747-20.88 4.904-18.422 4.904-56.851 4.904-56.851s0-38.43-4.904-56.85" fill="#282828"/><path d="M93.333 117.558l61.334-34.89-61.334-34.893z" fill="#fff"/>
+            </svg> 
+            </a>
+            
+            <a class="d-inline-block social-icon" target="_blank" href="{{site.social.tiktok}}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-instagram" viewBox="0 0 512 512">
+              <path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"/>
+            </svg>
+            </a>
+      
+            <a class="d-inline-block social-icon" target="_blank" href="{{site.social.facebook}}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+            </a>
+
+            <a class="d-inline-block social-icon" target="_blank" href="{{site.social.telegram}}">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="19" fill="currentColor" class="bi bi-facebook" viewBox="0 0 455 455" xml:space="preserve">
+              <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M384.814,100.68l-53.458,257.136
+		c-1.259,6.071-8.378,8.822-13.401,5.172l-72.975-52.981c-4.43-3.217-10.471-3.046-14.712,0.412l-40.46,32.981
+		c-4.695,3.84-11.771,1.7-13.569-4.083l-28.094-90.351l-72.583-27.089c-7.373-2.762-7.436-13.171-0.084-16.003L373.36,90.959
+		C379.675,88.517,386.19,94.049,384.814,100.68z"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M313.567,147.179l-141.854,87.367c-5.437,3.355-7.996,9.921-6.242,16.068
+		l15.337,53.891c1.091,3.818,6.631,3.428,7.162-0.517l3.986-29.553c0.753-5.564,3.406-10.693,7.522-14.522l117.069-108.822
+		C318.739,149.061,316.115,145.614,313.567,147.179z"/>
+            </svg>
+            </a>
+
+            <a class="d-inline-block social-icon" target="_blank" href="{{site.social.whatsapp}}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-facebook" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z" fill="#000000"/>
+            </svg>
+            </a>
+
+          </div>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+              <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+            </svg>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto font-weight-bold d-flex align-items-center">
+              {% for item in site.data.menus.topmenu %}
+              <li class="nav-item">
+                <a class="nav-link px-3 {% if item.class %}{{item.class}}{% endif %}" href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" alt="{{item.title}}">{{item.title}}</a>
+              </li>
+              {% endfor %}
+              <li class="nav-item">
+                {% include search.html %}
+              </li>
+             </ul>
+           </div>
+         </div>
+        </nav>
+       </div>  
+
+    
+<!-- Container
+================================================== -->    
+<main class="container">
+<!-- horizontal -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1794381705838564"
+     data-ad-slot="4999984509"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><br>
+      {{ content }}
+<!-- horizontal -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1794381705838564"
+     data-ad-slot="4999984509"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</main>
+
+<!-- Footer
+================================================== -->    
+<footer class="footer container text-center">  
+
+  <!-- CREDITS BEGIN.-->
+  <!-- subscribe my channel -->
+  <div class="credits mx-auto text-center mb-3">
+    <a class="hover-opacity font-weight-bold" href="https://www.youtube.com/@idtechannel">
+      <img src="{{site.baseurl}}/assets/images/credits.png" alt="powered by Id Tech Channel">
+    </a>
+  </div>
+  <!-- CREDITS END -->
+
+  <ul class="p-0 mb-1 small">
+    {% for item in site.data.menus.footermenu %}
+    <li>
+      <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" alt="{{item.title}}">{{item.title}}</a>
+    </li>
+    {% endfor %}
+    </ul>
+    <div class="copyright small">
+       Copyright ©2018-<script>document.write(new Date().getFullYear())</script> <a href="{{site.baseurl}}">{{site.title}}</a>. All rights reserved.
+    </div>
+</footer>
+{% include iklan-popup.html %}
+<!-- JavaScript
+================================================== -->    
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>   
+<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>   
+<script src="{{ site.baseurl }}/assets/js/theme.js"></script>    
+<script id="dsq-count-scr" src="//idtechannel.disqus.com/count.js" async></script>  
+<script src="{{ site.baseurl }}/assets/js/copycode.js"></script>
+</body>
+    
+</html>
