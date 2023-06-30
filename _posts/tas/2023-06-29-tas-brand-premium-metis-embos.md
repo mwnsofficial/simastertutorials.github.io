@@ -8,19 +8,19 @@ youtubeid:
 
 👉HARGA 300.000
 
-![tas1][{{site.baseurl}}/assets/images/tas/tas1.jpg]
+<img src="assets/images/tas/tas1.jpg" width="250" height="250" alt="tas1" border="0"><br />
 
-![tas2][{{site.baseurl}}/assets/images/tas/tas2.jpg]
+<img src="assets/images/tas/tas2.jpg" width="250" height="250" alt="tas2" border="0"><br />
 
-![tas3][{{site.baseurl}}/assets/images/tas/tas3.jpg]
+<img src="assets/images/tas/tas3.jpg" width="250" height="250" alt="tas3" border="0"><br />
 
-![tas4][{{site.baseurl}}/assets/images/tas/tas4.jpg]
+<img src="assets/images/tas/tas4.jpg" width="250" height="250" alt="tas4" border="0"><br />
 
-![tas5][{{site.baseurl}}/assets/images/tas/tas5.jpg]
+<img src="assets/images/tas/tas5.jpg" width="250" height="250" alt="tas5" border="0"><br />
 
-![tas6][{{site.baseurl}}/assets/images/tas/tas6.jpg]
+<img src="assets/images/tas/tas6.jpg" width="250" height="250" alt="tas6" border="0"><br />
 
-![tas7][{{site.baseurl}}/assets/images/tas/tas7.jpg]
+<img src="assets/images/tas/tas7.jpg" width="250" height="250" alt="tas7" border="0"><br />
 
 -DETAIL DAN INFO PRODUK-☎️
 
@@ -59,4 +59,12 @@ youtubeid:
 
 ✅ BERAT PRODUK 900GR. (1KG).
 
-Pesan <a href="/contact/" target="_blank">DISINI</a> ya kak.
+<center><h5><span>SUKA DENGAN BARANG INI</span></h5></center>
+<div style="text-align: center;position:center;">
+<button onclick="pesan('/contact/')" style="background:blue;color:white">PESAN SEKARANG JUGA</button>
+</div>
+<script>
+    function pesan (url) {
+        location.href = url;
+    }
+</script>
