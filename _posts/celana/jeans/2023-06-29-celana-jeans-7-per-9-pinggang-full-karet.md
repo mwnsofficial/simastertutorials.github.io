@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CELANA JEANS 7/9 PINGGANG FULL KARET
+title: "CELANA JEANS 7 per 9 PINGGANG FULL KARET
 categories: [ celana jeans ]
 image: assets/images/celana/jeans1.jpg
 youtubeid: 
