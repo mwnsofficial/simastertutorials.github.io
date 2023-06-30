@@ -8,19 +8,19 @@ youtubeid:
 
 👉HARGA 300.000
 
-<img src="assets/images/tas/tas1.jpg" width="250" height="250" alt="tas1" border="0"><br />
+<img src="{{ site.baseurl }}/assets/images/tas/tas1.jpg" width="250" height="250" alt="tas1" border="0"><br />
 
-<img src="assets/images/tas/tas2.jpg" width="250" height="250" alt="tas2" border="0"><br />
+<img src="{{ site.baseurl }}/assets/images/tas/tas2.jpg" width="250" height="250" alt="tas2" border="0"><br />
 
-<img src="assets/images/tas/tas3.jpg" width="250" height="250" alt="tas3" border="0"><br />
+<img src="{{ site.baseurl }}/assets/images/tas/tas3.jpg" width="250" height="250" alt="tas3" border="0"><br />
 
-<img src="assets/images/tas/tas4.jpg" width="250" height="250" alt="tas4" border="0"><br />
+<img src="{{ site.baseurl }}/assets/images/tas/tas4.jpg" width="250" height="250" alt="tas4" border="0"><br />
 
-<img src="assets/images/tas/tas5.jpg" width="250" height="250" alt="tas5" border="0"><br />
+<img src="{{ site.baseurl }}/assets/images/tas/tas5.jpg" width="250" height="250" alt="tas5" border="0"><br />
 
-<img src="assets/images/tas/tas6.jpg" width="250" height="250" alt="tas6" border="0"><br />
+<img src="{{ site.baseurl }}/assets/images/tas/tas6.jpg" width="250" height="250" alt="tas6" border="0"><br />
 
-<img src="assets/images/tas/tas7.jpg" width="250" height="250" alt="tas7" border="0"><br />
+<img src="{{ site.baseurl }}/assets/images/tas/tas7.jpg" width="250" height="250" alt="tas7" border="0"><br />
 
 -DETAIL DAN INFO PRODUK-☎️
 
