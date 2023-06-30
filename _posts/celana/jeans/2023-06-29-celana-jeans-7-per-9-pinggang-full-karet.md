@@ -2,15 +2,15 @@
 layout: post
 title: "Celana 7 per 9 pinggang full karet"
 categories: [ celana jeans ]
-image: assets/images/celana/jeans1.jpg
+image: assets/images/celana/jeans/jeans1.jpg
 youtubeid: 
 ---
 
 👉 Harga 200.000
 
-<img src="{{ site.baseurl }}/assets/images/celana/jeans1.jpg" width="250" height="250" alt="jeans1" border="0"><br />
+<img src="{{ site.baseurl }}/assets/images/celana/jeans/jeans1.jpg" width="250" height="250" alt="jeans1" border="0"><br />
 
-<img src="{{ site.baseurl }}/assets/images/celana/jeans2.jpg" width="250" height="250" alt="jeans2" border="0"><br />
+<img src="{{ site.baseurl }}/assets/images/celana/jeans/jeans2.jpg" width="250" height="250" alt="jeans2" border="0"><br />
 
 -DETAIL DAN INFO PRODUK-☎️
 
