@@ -58,13 +58,3 @@ youtubeid:
 ✅ READY KOMPLIT FULL COLOR.
 
 ✅ BERAT PRODUK 900GR. (1KG).
-
-<center><h5><span>SUKA DENGAN BARANG INI</span></h5></center>
-<div style="text-align: center;position:center;">
-<button onclick="pesan('/contact/')" style="background:blue;color:white">PESAN SEKARANG JUGA</button>
-</div>
-<script>
-    function pesan (url) {
-        location.href = url;
-    }
-</script>
