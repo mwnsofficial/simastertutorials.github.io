@@ -55,7 +55,7 @@ post_class: post-template
 				{{content}}
                 <div class="clearfix"></div>
 			</div>
-
+           {% include donate.html %}<br>
 <!-- embed youtube -->
 {% include youtubeplayer.html id=page.youtubeid %}         
 
@@ -68,7 +68,6 @@ post_class: post-template
                 {% endif %}
                 </small>
             </p>
-           {% include donate.html %}<br>
             <!-- Prev/Next -->
             <div class="row PageNavigation mt-4 prevnextlinks d-flex justify-content-between">
               {% if page.previous.url %}
