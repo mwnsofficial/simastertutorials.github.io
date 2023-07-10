@@ -7,8 +7,8 @@ layout: default
     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
       <div class="col p-4 d-flex flex-column position-static">
         {% capture category_name %}{{ category | first }}{% endcapture %}
+        <h5 class="mb-0">{{ category_name }}</a></h5>
         {% for post in site.categories[category_name] %}
-        <p class="card-text mb-auto">{{ category_name | slugize }}</p>
         <a style="text-decoration:none;" href="{{ site.baseurl }}{{ post.url }}" class="stretched-link">{{post.title}}</a>
         <div class="mb-1 text-muted">{{ post.date | date_to_string }}</div>
         <p class="card-text mb-auto">{{ post.excerpt | strip_html | truncatewords:15 }}</p>
