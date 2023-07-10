@@ -2,7 +2,7 @@
 title: Home
 layout: default
 ---
-
+<main>
 <div class="container">
 {% include promosi.html %}
   <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
@@ -13,7 +13,8 @@ layout: default
     </div>
   </div>
 <h3 class="pb-4 mb-4 fst-italic border-bottom">Post Simaster</h3>
-{% for post in site.posts limit:5 %}
+<section class="row">
+  {% for post in site.posts limit:5 %}
 <!-- begin post -->
 <div class="row mb-2">
   <div class="col-md-6">
@@ -33,11 +34,7 @@ layout: default
 </div>
 <!-- end post -->
 {% endfor %}
-{{ content }}
-<nav class="blog-pagination" aria-label="Pagination">
-  <a class="btn btn-outline-primary" href="#">Older</a>
-  <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
-</nav>
+  </section>
 
   <div class="row g-5">
     <div class="col-md-8">
@@ -143,3 +140,4 @@ layout: default
     </div>
 {% include aktifitas.html %}
 </div>
+</main>
