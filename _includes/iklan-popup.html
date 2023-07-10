@@ -1,68 +1,23 @@
-<style>
-#topbar {
-height:30px;
-width:auto;
-margin:0 auto;
-background: #005094 url('http://lh3.ggpht.com/_beEpWOXwLJE/TIb57Lu4fwI/AAAAAAAABE0/q7niFVRbyNE/top-toolbar.jpg');
-background-repeat:repeat-x;
-text-align:left;
-padding-top:4px;
-}
-#adsground {
-height:auto;
-margin:0 auto;
-width: 336px;
-background:#fff;
-border-bottom:2px #005094 solid;
-border-right:2px #005094 solid;
-border-left:2px #005094 solid;
-text-align:Center;
-padding:4px;
-}
+<article class="my-3" id="toasts">
+  <div>
+    <div class="bd-example bg-dark p-5 align-items-center">
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007aff"/></svg>
 
-
-#headlineatas {
-opacity:1.0;
-height:auto;
-width:auto;
-position:fixed;
-top:65px;
-left:170px;
-border-bottom:1px #005094 solid;
-border-bottom:0px blue solid;
-color:#333;
-padding:0px;
-z-index:1001;
-position: fixed;
-top: 50%;
-left: 50%;
-margin-top: -120px;
-margin-left: -220px;
-font-size:13px;}
-</style>
-<script type="text/javascript">
-function getValue()
-{
-document.getElementById("headlineatas").style.display = 'none';
-}
-</script>
-<div id="headlineatas">
-<div id="topbar">
-<span style="color:#fff;font-size:13px;font-weight:bold;text-shadow:black 0.1em 0.1em 0.1em;float:right;padding-top:3px;padding-right:10px"><a target="_blank" onclick="getValue()">close</a></span>
-</div>
-<div id="adsground">
-<p>Jangan lupa <a style="color:darkred" href="https://www.youtube.com/@idtechannel" target="_blank"><b>Subscribe</b></a> ya bro.<br>
-Harap matikan juga adblock anda untuk keberlangsungan domain ini untuk bertahan.</p>
-<p>
-<!-- bannerku -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1794381705838564"
-     data-ad-slot="9279811452"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
+        <strong class="me-auto">Simaster</strong>
+        <small class="text-muted"><span id="tanggalwaktu"></span></small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Selamat datang di blog simaster tempat kumpulan config dan script.<br>
+        {% include adsense.html %}
+      </div>
+    </div>
+    </div>
+  </div>
+</article>
 <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></p>
-</div>
-</div>
+var dt = new Date();
+document.getElementById("tanggalwaktu").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()+1).slice(-2)) +":"+ (("0"+dt.getMinutes()+1).slice(-2));
+</script>
