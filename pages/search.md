@@ -1,9 +1,9 @@
 ---
-title: search
+title: Hasil Pencarian
 layout: search
-permalink: "/search/"
+permalink: "{{ site.baseurl }}/search"
 ---
-<form action="/search/" method="get">
+<form action="{{ site.baseurl }}/search/" method="get">
   <label for="search-box">Hasil Pencarian</label>
   <input type="text" id="search-box" name="query">
   <input type="submit" value="search">
