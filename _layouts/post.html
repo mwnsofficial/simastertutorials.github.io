@@ -55,16 +55,7 @@ post_class: post-template
 				{{content}}
                 <div class="clearfix"></div>
 			</div>
-			<center><h5><span>SUKA DENGAN BARANG INI</span></h5></center>
-<div style="text-align: center;position:center;">
-<button onclick="pesan('/contact/')" style="background:blue;color:white">PESAN SEKARANG JUGA</button>
-</div>
-<script>
-    function pesan (url) {
-        location.href = url;
-    }
-</script><br>
-           {% include donate.html %}<br>
+
 <!-- embed youtube -->
 {% include youtubeplayer.html id=page.youtubeid %}         
 
@@ -77,6 +68,7 @@ post_class: post-template
                 {% endif %}
                 </small>
             </p>
+           {% include donate.html %}<br>
             <!-- Prev/Next -->
             <div class="row PageNavigation mt-4 prevnextlinks d-flex justify-content-between">
               {% if page.previous.url %}
@@ -102,7 +94,7 @@ post_class: post-template
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script><br>  
-<center><h5><span>Pustaka Yusuf Store</span></h5></center>
+<center><h5><span>Pustaka ID Tech Channel</span></h5></center>
 <div style="text-align: center;position:center;">
 <button onclick="feed('{{ site.baseurl }}/feed.xml')" style="background:teal;color:white">Feed</button>
 <button onclick="sitemap('{{ site.baseurl }}/sitemap.xml')" style="background:grey;color:white">Sitemap</button>
