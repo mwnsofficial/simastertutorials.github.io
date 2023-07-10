@@ -4,7 +4,7 @@ layout: search
 permalink: "/search/"
 ---
 <form action="/search/" method="get">
-  <label for="search-box">Search</label>
+  <label for="search-box">Hasil Pencarian</label>
   <input type="text" id="search-box" name="query">
   <input type="submit" value="search">
 </form>
@@ -25,5 +25,5 @@ permalink: "/search/"
     {% endfor %}
   };
 </script>
-<script src="{{site.baseurl}}/assets/js/lunr.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/search.js"></script>
+<script src="{{ site.baseurl }}/assets/js/lunr.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/search.js"></script>
