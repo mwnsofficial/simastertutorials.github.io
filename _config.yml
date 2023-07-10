@@ -33,6 +33,16 @@ authors:
     twitter: https://twitter.com/idtechannel
     description: "."
 
+twitter:
+  username: personal_handle
+  site: publisher_handle
+
+facebook:
+ app_id: 828041324395133
+ publisher: 828041324395133
+ admins: MYA Creation Studio
+ authors: MYA Creation Studio
+
 # Social
 social:
   youtube: https://www.youtube.com/@idtechannel/
