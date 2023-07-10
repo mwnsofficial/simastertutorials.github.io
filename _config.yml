@@ -1,14 +1,14 @@
-title: "Yusuf Store"
-description: Melayani penjualan bermacam-macam produk dan bisnis.
+title: "Simaster"
+description: Kumpulan konfigurasi dan script dari simaster
 email: myarachma92@gmail.com
 timezone: UTC
 baseurl: "/"
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-author: Yusuf Store
+author: Muhammad Yusuf
 paginate: 30
-disqus: 'yusufstore'
+disqus: 'idtechannel'
 locale: en_us
 lang: en_us
 feed_items: 10
@@ -36,8 +36,11 @@ authors:
 
 # Social
 social:
-  telegram: https://t.me/yusufstore92
-  whatsapp: https://wa.me/6287764241047
+  youtube: https://www.youtube.com/@idtechannel/
+  facebook: https://www.facebook.com/muhammadyusuf1992
+  tiktok: https://vt.tiktok.com/ZS877vHb3/
+  telegram: https://t.me/idtechannel
+  whatsapp: https://chat.whatsapp.com/H2u5ABrvUoHHXZvh8lbitP
 defaults:
   -
     scope:

@@ -3,46 +3,133 @@ title: Home
 layout: default
 ---
 
-<!-- Home Intro
-================================================== -->
-{% if page.url == "/" %} 
-{% include header.html %}
-{% endif %}
-<br>
-<!-- Featured
-================================================== -->
-<section class="row">
-  {% for post in site.posts %}
-      {% if post.featured == true %}
-          <div class="col-md-4 mb-5">
-          {% include postbox.html %}
-          </div>
-      {% endif %}
-  {% endfor %}
+<main>
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Perkenalkan, tampilan blog baru Simaster</h1>
+      <p class="lead my-3">Kini Simaster akan memuat lebih banyak data yang anda butuhkan dan anda perlukan untuk menjaga kelancaran dan stabilitas koneksi dalam perangkat anda.</p>
+      <p class="lead mb-0"><a style="text-decoration:none;" href="#" class="text-white fw-bold">Masuk disini untuk baca selengkapnya</a></a></p>
+    </div>
   </div>
+
+<section class="row">
+{% for post in site.posts %}
+{% if post.featured == true %}
+<div class="col-md-4 mb-5">
+{% include postbox.html %}
+</div>
+{% endif %}
+{% endfor %}
+</div>
 </section>
 
-<!-- Posts List with Sidebar (except featured)
-================================================== -->
-<section class="row">
-  <div class="col-sm-8">
-    <div class="row">
-      {% for post in paginator.posts %}
-      {% unless post.featured == true %}
-      <div class="col-md-6 mb-5">
-        {% include postbox.html %}
-      </div>
-      {% endunless %}
-      {% endfor %}
+<nav class="blog-pagination" aria-label="Pagination">
+  <a class="btn btn-outline-primary" href="#">Older</a>
+  <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+</nav>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Pesan developers Simaster untuk anda pembaca dan berlangganan
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">Pengenalan konfig dari Simaster</h2>
+        <p class="blog-post-meta">10 Juli 2023 by <a style="text-decoration:none;" href="#">Muhammad Yusuf</a></p>
+
+        <p>Di dalam halaman blog saya ini, saya akan memberitahukan kepada anda bahwa sebelum menggunakan konfig dan script dari simaster merupakan hak murni dari simaster tanpa campur tangan dari orang lain atau pun pihak ketiga.</p>
+        <hr>
+        <p>Simaster berharap kepada anda semua pembaca dan berlangganan blog dan konfig juga script Simaster agar selalu memperhatikan kualitas firmware baik dari openwrt maupun dari modem kalian masing-masing karena jika salah memilih akan berdampak pada konfig dari simaster dan simaster tidak bertanggung jawab atas kerusakan tersebut.</p>
+        <h2>Dukungan pelayanan 24 jam</h2>
+        <p>Pesan Simaster untuk layanan 24 jam:</p>
+        <blockquote class="blockquote">
+          <p>Simaster tidak akan menjawab semua pesan chat atau inbok messenger dan jika anda ingin dapatkan layanan dukungan 24 jam maka anda di wajibkan mengirim pesan melalui email kami <a style="text-decoration:none;" href="mailto:myarachma92@gmail.com">Disini</a>.</p>
+        </blockquote>
+        <p>Di luar pesan dari email, simaster tidak akan layani 24 jam terkecuali bagi anda yang sudah berlangganan jasa kepada Simaster Official.</p>
+        <h3>Fitur konfig Simaster</h3>
+        <p>Semua kelengkapan yang ada pada konfig simaster diantaranya:</p>
+        <ul>
+          <li>Mode Rule</li>
+          <li>Mode Script</li>
+          <li>Mode Meta</li>
+          <li>Mode Manual</li>
+          <li>Mode Auto</li>
+          <li>Loadbalance all Interfaces</li>
+        </ul>
+        <p>Cara berlangganan versi premium:</p>
+        <ol>
+          <li>Kirimkan edintitas ke simaster</li>
+          <li>Pilih mode dan kriteria untuk konfig ke simaster</li>
+          <li>Melakukan pembayaran di awal sebelum progress berjalan</li>
+        </ol>
+        <p>Dukungan type mode clash Simaster:</p>
+        <dl>
+          <dt>Mode Manual dan Auto (Rule)</dt>
+          <dd>Konfigurasi versi manual anda bisa mengisi secara langsung dan jika versi auto maka semuanya simaster sudah mengaturnya anda tinggal duduk manis saja.</dd>
+          <dt>Mode Manual dan Auto (Script)</dt>
+          <dd>Konfigurasi versi manual ini bisa menggunakan rule provider dan versi auto anda tidak memerlukan rule provider lagi jadi anda tidak perlu repot-repot dan hanya duduk manis saja.</dd>
+          <dt>Mode Manual dan Auto (Meta)</dt>
+          <dd>Konfigurasi versi manual meta ini tergantung pada rule provider dan versi auto hanya mengutamakan port pada konfigurasi saja dan anda tidak perlu susah payah mengumpulkan semua data dan biarkan simaster yang bekerja jadi anda hanya tinggal duduk manis saja.</dd>
+        </dl>
+        <h3>Kinerja antar Mode Konfig Simaster</h3>
+        <p>Ada perbedaan penggunaan di setiap mode:</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Mode</th>
+              <th>Global</th>
+              <th>Rule</th>
+              <th>Direct</th>
+              <th>Script</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rule</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>Tidak
+            </tr>
+            <tr>
+              <td>Script</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Meta</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>Tidak
+            </tr>
+            <tr>
+              <td>Global</td>
+              <td>✔</td>
+              <td>Tidak</td>
+              <td>Tidak</td>
+              <td>Tidak
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td>4</td>
+              <td>3</td>
+              <td>3</td>
+              <td>1</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <p>Semua data valid dan di kumpulkan sejak clash hadir di publik hingga sampai saat sekarang ini.</p>
+      </article>
+
     </div>
-    <!-- Pagination -->
-    <div class="bottompagination">
-      <span class="navigation" role="navigation">
-          {% include pagination.html %}
-      </span>
     </div>
-  </div>
-  <div class="col-sm-4">
-    {% include sidebar.html %}
-  </div>
-</section>
+{% include aktifitas.html %}
+</div>
+</main>
