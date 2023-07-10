@@ -2,7 +2,6 @@
 <html lang="en">
 {% include head.html %}
 <body>
-{% include iklan-popup.html %}
 <main>
  <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
     <div class="container-fluid">
@@ -29,7 +28,7 @@
   </nav>
 </div>
 {{ content }}
-
+{% include iklan-popup.html %}
 {% include footer.html %}
 </main>
     <script src="{{ site.baseurl }}/assets/js/bootstrap.bundle.min.js"></script>
