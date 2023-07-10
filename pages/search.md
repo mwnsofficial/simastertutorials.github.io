@@ -3,6 +3,7 @@ title: search
 layout: search
 permalink: "/search/"
 ---
+{% include adsense.html %}
 <form action="/search/" method="get">
   <label for="search-box">Search</label>
   <input type="text" id="search-box" name="query">
@@ -10,7 +11,7 @@ permalink: "/search/"
 </form>
 
 <ul id="search-results"></ul>
-
+{% include adsense.html %}
 <script>
   window.store = {
     {% for post in site.posts %}
