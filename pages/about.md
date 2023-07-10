@@ -2,6 +2,7 @@
 layout: page
 title: About
 image: assets/images/screenshot.png
+permalink: "/about/"
 ---
 
 Perkenalkan, nama saya Muhammad Yusuf dan saya tinggal di Kalimantan Selatan tepatnya 15km dari kota Banjarmasin atau dari kota Banjarbaru. 
