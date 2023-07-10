@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Konfigurasikan DNS"
+title: "Membuat Proxies Clash"
 categories: [ clash ]
-image: assets/images/4.jpg
+image: assets/images/
 ---
 ## pengaturan dengan cara yang benar
 
