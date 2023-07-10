@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-permalink: "/about/"
 image: assets/images/screenshot.png
 ---
 
@@ -9,9 +8,9 @@ Perkenalkan, nama saya Muhammad Yusuf dan saya tinggal di Kalimantan Selatan tep
 
 Saya memiliki 3 blog khusus untuk anda simak. 
 
-1. Blog **ID Tech Channel** khusus untuk channel youtube saya.
-2. Blog **ID Tech Files** khusus untuk penyimpanan semua file dari channel youtube saya.
-3. Blog **ID Tech Learning** khusus untuk pelanggan premium yang ingin belajar khusus.
+1. Blog [**mwns.my.id**](https://mwns.my.id) khusus untuk config dan script dari saya.
+2. Blog [**banjarstore.web.id**](https://banjarstore.rf.gd) khusus untuk induk jual beli dari saya.
+3. Blog [**banjarstore.rf.gd**](https://banjarstore.rf.gd) khusus untuk cabang jual beli dari saya.
 
 Untuk pembelajar secara visual. Anda bisa masuk ke channel youtube saya yang berada di bawah ini.
 
