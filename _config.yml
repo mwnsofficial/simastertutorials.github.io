@@ -2,8 +2,7 @@ title: "Simaster"
 description: Kumpulan konfigurasi dan script dari simaster
 email: myarachma92@gmail.com
 timezone: UTC
-baseurl: "/"
-permalink: "/:title/"
+baseurl: ""
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 author: Muhammad Yusuf
