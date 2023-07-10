@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Solusi untuk konflik dns clash dalam jaringan"
-categories: [ clash ]
+categories: [ dns ]
 image: assets/images/
 ---
 Pendahuluan:
