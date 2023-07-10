@@ -4,17 +4,44 @@ title: Contact
 permalink: "/contact/"
 comments: false
 ---
-
-<form action="https://getform.io/f/0edc9d45-f7d5-466f-b5be-26b15094b977" method="POST">    
-<p class="mb-4">Terima kasih, anda sudah setia bersama ID Tech Channel. Silahkan kirimkan kritik dan saran anda..!</p>
-<div class="form-group row">
-<div class="col-md-6">
-<input class="form-control" type="text" name="nama" placeholder="Nama*" required>
-</div>
-<div class="col-md-6">
-<input class="form-control" type="email" name="email" placeholder="E-mail*" required>
-</div>
-</div>
-<textarea rows="8" class="form-control mb-3" name="pesan" placeholder="Pesan*" required></textarea>    
-<input class="btn btn-dark" type="submit" value="Kirim">
+<p>Silahkan mengisi formulir di bawah ini jika anda ingin berlangganan konfig premium atau ingin donasi sebagai konfirmasi anda kepada kami, terima kasih.</p>
+<form action="mailto:myarachma92@gmail.com" method="post" enctype="text/plain">
+  <label for="name">Nama:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="name">Whatsapp:</label>
+  <input type="text" id="whatsapp" name="whatsapp"><br><br>
+  <label for="name">Telegram:</label>
+  <input type="text" id="telegram" name="telegram"><br><br>
+  <p>Pilih Pesan:
+  <select name='pesan'>
+  <option value='none'>NONE</option>
+  <option value='berlangganan'>BERLANGGANAN</option>
+  <option value='donasi'>DONASI</option>
+  </select>
+  </p>
+  <p>Pilih Bank:
+  <select name='bank'>
+  <option value='none'>NONE</option>
+  <option value='bri'>BRI</option>
+  <option value='bca'>BCA</option>
+  <option value='bni'>BNI</option>
+  <option value='mandiri'>MANDIRI</option>
+  <option value='bsi'>BSI</option>
+  <option value='permata'>PERMATA</option>
+  <option value='dana'>DANA</option>
+  <option value='gopay'>GOPAY</option>
+  <option value='ovo'>OVO</option>
+  <option value='shopeepay'>SHOPEEPAY</option>
+  <option value='linkaja'>LINKAJA</option>
+  <option value='paypal'>PAYPAL</option>
+  </select>
+  </p>
+  <p>Silahkan kirimkan foto atau screenshoot resi bank atau ewallet anda kepada kami.</p>
+  <input type="file" value="upload gambar"/><br><br>
+  <label for="message">Jumlah Saldo dikirim:</label><br>
+  <textarea id="saldo" name="saldo" rows="5" cols="40"></textarea><br><br>
+  <input type="submit" value="Kirim">
+  <input type="reset" value="Batal">
 </form>
