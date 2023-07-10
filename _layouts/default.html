@@ -24,8 +24,9 @@
         </form>
 
         <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2" href="/contact" target="_blank">Kirim Pesan</button>
-          <button type="button" class="btn btn-warning" href="https://forms.gle/gw7k5jWv27bVgpr29" target="_blank">Langganan Premium</button>
+
+          <button onclick="contact('/contact')" type="button" class="btn btn-outline-light me-2">Kirim Pesan</button>
+          <button onclick="register('https://forms.gle/gw7k5jWv27bVgpr29')" type="button" class="btn btn-warning">Langganan Premium</button>
         </div>
       </div>
     </div>
@@ -38,5 +39,13 @@
     <script src="{{ site.baseurl }}/assets/js/sidebars.js"></script>
     <script src="{{ site.baseurl }}/assets/jscheatsheet.js"></script>
     <script src="https://kit.fontawesome.com/602c3e9e87.js" crossorigin="anonymous"></script>
-  </body>
+<script>
+    function contact (url) {
+        location.href = url;
+    }
+    function register (url) {
+        location.href = url;
+    }
+</script>
+</body>
 </html>
