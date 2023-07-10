@@ -10,7 +10,7 @@ Perkenalkan, nama saya Muhammad Yusuf dan saya tinggal di Kalimantan Selatan tep
 Saya memiliki 3 blog khusus untuk anda simak. 
 
 1. Blog [**mwns.my.id**](https://mwns.my.id) khusus untuk config dan script dari saya.
-2. Blog [**banjarstore.web.id**](https://banjarstore.rf.gd) khusus untuk induk jual beli dari saya.
+2. Blog [**banjarstore.web.id**](https://banjarstore.web.gd) khusus untuk induk jual beli dari saya.
 3. Blog [**banjarstore.rf.gd**](https://banjarstore.rf.gd) khusus untuk cabang jual beli dari saya.
 
 Untuk pembelajar secara visual. Anda bisa masuk ke channel youtube saya yang berada di bawah ini.
