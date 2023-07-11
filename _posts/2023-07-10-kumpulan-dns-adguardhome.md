@@ -2,7 +2,7 @@
 layout: post
 title: "kumpulan DNS AdGuardHome"
 categories: [ dns ]
-image: assets/images/
+image: assets/images/dns-adguardhome.jpg
 ---
 Berikut ini adalah beberapa kumpulan DNS AdGuardHome yang bisa Anda gunakan:
 
