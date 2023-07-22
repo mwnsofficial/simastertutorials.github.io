@@ -8,9 +8,9 @@ Sebelumnya saya `Muhammad Yusuf` selaku pemilik dari situs **Simaster Tutorial**
 
 Dan bagi anda yang ingin berdonasi ke `Simaster Tutorials`, anda bisa melalui di bawah ini:
 
-- BANK RAKYAT INDONESIA
--- 453401017095532
--- MUHAMMAD YUSUF
+> BANK RAKYAT INDONESIA
+> 453401017095532
+> MUHAMMAD YUSUF
 
-- DANA / OVO/ SHOPEPAY / SEABANK
--- 087714249731
+> DANA / OVO/ SHOPEPAY / SEABANK
+> 087714249731
