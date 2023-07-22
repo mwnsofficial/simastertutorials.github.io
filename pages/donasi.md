@@ -10,7 +10,6 @@ Sebelumnya saya `Muhammad Yusuf` selaku pemilik dari situs **Simaster Tutorial**
 Dan bagi anda yang ingin berdonasi ke `Simaster Tutorials`, anda bisa melalui di bawah ini:
 
 BANK RAKYAT INDONESIA
-
 ```
 453401017095532
 MUHAMMAD YUSUF
@@ -41,3 +40,7 @@ SociaBuzz
 Ko-Fi
 
 [Donasi Disini](https://ko-fi.com/masterwifinetworksolution)
+
+Paypal
+
+[Donasi Disini](https://paypal.me/myarachma92?country.x=ID&locale.x=id_ID)
