@@ -1,31 +1,39 @@
 ---
-title: post pertama
+title: Mengatur Singkron Jam
 layout: post
-description: ini adalah post pertama simaster
+description: Cara mengatur singkronisasi jam pada opewnrt
 image: images/blog/blog-single.jpg
-image-alt: post blog pertama
+image-alt: mengatur singkron jam
+tags: [openwrt]
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-laudantiu, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-labore et dolore magnam aliquam quaerat voluptatem.
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-consequuntur magni dolores eos qui ratione voluptatem s
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-laudantium, totam rem aperiam
+Silahkan anda hidupkan perangkat dan masuk lah ke webgui dari luci `openwrt`.
+
+Untuk memasukkan `IP` pada search http browser silahkan periksa terlebih dahulu di alamat `address` host yang ada di pengaturan wifi anda.
+
+Jika alamat `IP` pada wifi anda menunjukkan alamat di `192.168.1.106` (hanya contoh saja) itu berarti untuk gateway ip adalah `192.168.1.1` karena subnet mask nya adalah 24.
+
+Jadi untuk masuk ke webgui openwrt adalah `192.168.1.1` dan setelah masuk silahkan anda untuk mengisi password luci anda.
+
+Setelah masuk login, anda bisa menuju ke menu pojok kiri atas dan pilih lah menu `System` lalu kemudian pilih lagi `System`.
+
+Kemudian anda mengatur zona waktu tepat di bawah nya lalu simpan.
+
+Setelah itu masuk ke tab singkronisasi, anda bisa mengatur `ip pool` sendiri atau anda bisa mengikuti ip pool di bawah ini:
+
+Ini no.1
+```
+0.id.pool.ntp.org
+```
+No.2
+```
+1.id.pool.ntp.org
+```
+No.3
+```
+2.id.pool.ntp.org
+```
+No.4
+```
+3.id.pool.ntp.org
+```
+Dan jikq sudah anda bisa tekan `save and apply` untuk menyipan hasil settingan.
