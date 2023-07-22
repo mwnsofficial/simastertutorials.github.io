@@ -1,0 +1,49 @@
+---
+title: Informasi Terupdate Simaster Tutorials
+layout: default
+description: Halaman ini khusus untuk pemberitahuan update config, rule, script, port, berlangganan config premium, config online, dan lainnya
+date: 2023-07-21
+---
+<!-- page title -->
+<section class="page-title-section overlay" data-background="/images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb mb-2">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="/index.html">Beranda</a></li>
+          <li class="list-inline-item text-white h3 font-secondary nasted">{{page.title}}</li>
+        </ul>
+        <p class="{{page.description}}.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- courses -->
+<section class="section">
+  <div class="container">
+    <!-- course list -->
+<div class="row justify-content-center">
+  <!-- course item -->
+  {% for page in site.pages limit:10 %}
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      {% if page.image %}{% include page-featured-image.html image=page.image %}{% endif %}
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>{{ page.date | date: "%d %B %Y" }}</li>
+          <li class="list-inline-item">{% if page.tags != null %}{% assign projectTags = site.data.tags.allowed-tags %}{% for tag in page.tags %}{% if projectTags contains tag %}<a href="/{{ "tag_" | append: tag | append: ".html"}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}{% endif %}{% endfor %}{% endif %}</li>
+        </ul>
+        <a href="{{page.url | absolute_url}}">
+          <h4 class="card-title">{{page.title}}</h4>
+        </a>
+        <p class="card-text mb-4"> {{page.description}}</p>
+        <a href="{{page.url | absolute_url}}" class="btn btn-primary btn-sm">Selengkapnya</a>
+       </div>
+     </div>
+   </div>
+  </div>
+ </div>
+ {% endfor %}
+</section>
