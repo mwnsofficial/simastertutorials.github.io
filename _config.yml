@@ -48,20 +48,6 @@ defaults:
     values:
       layout: "post"
       comments: true
-  -
-    scope:
-      path: ""
-      type: "configfrees"
-    values:
-      layout: "configfree"
-      comments: false
-   -
-    scope:
-      path: ""
-      type: "configpremiums"
-    values:
-      layout: "configpremium"
-      comments: false
 
 # plugin simaster
 
