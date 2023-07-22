@@ -12,7 +12,7 @@ description: Semua konten blog dari simaster
           <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="index.html">Beranda</a></li>
           <li class="list-inline-item text-white h3 font-secondary nasted">{{page.title}}</li>
         </ul>
-        <p class="text-lighten mb-0">Our courses offer a good compromise between the continuous assessment favoured by some universities and the emphasis placed on final exams by others.</p>
+        <p class="text-lighten mb-0">{{page.description}}.</p>
       </div>
     </div>
   </div>
@@ -22,124 +22,25 @@ description: Semua konten blog dari simaster
 <!-- blogs -->
 <section class="section">
   <div class="container">
+   {% for post in site.posts %} 
     <div class="row">
       <!-- blog post -->
       <article class="col-lg-4 col-sm-6 mb-5">
         <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
+          {% if post.image %}{% include post-featured-image.html image=post.image %}{% endif %}
           <div class="card-body">
             <!-- post meta -->
             <ul class="list-inline mb-3">
               <!-- post date -->
-              <li class="list-inline-item mr-3 ml-0">August 28, 2018</li>
+              <li class="list-inline-item mr-3 ml-0">{{ page.date | date: -d %B %Y %}</li>
               <!-- author -->
-              <li class="list-inline-item mr-3 ml-0">By Somrat Sorkar</li>
+              <li class="list-inline-item mr-3 ml-0">By {{site.author}}</li>
             </ul>
             <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
+              <h4 class="card-title">{{post.title}}</h4>
             </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article>
-      <!-- blog post -->
-      <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
-          <div class="card-body">
-            <!-- post meta -->
-            <ul class="list-inline mb-3">
-              <!-- post date -->
-              <li class="list-inline-item mr-3 ml-0">August 13, 2018</li>
-              <!-- author -->
-              <li class="list-inline-item mr-3 ml-0">By Jonathon Drew</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article>
-      <!-- blog post -->
-      <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
-          <div class="card-body">
-            <!-- post meta -->
-            <ul class="list-inline mb-3">
-              <!-- post date -->
-              <li class="list-inline-item mr-3 ml-0">August 24, 2018</li>
-              <!-- author -->
-              <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article>
-      <!-- blog post -->
-      <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
-          <div class="card-body">
-            <!-- post meta -->
-            <ul class="list-inline mb-3">
-              <!-- post date -->
-              <li class="list-inline-item mr-3 ml-0">August 28, 2018</li>
-              <!-- author -->
-              <li class="list-inline-item mr-3 ml-0">By Somrat Sorkar</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article>
-      <!-- blog post -->
-      <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
-          <div class="card-body">
-            <!-- post meta -->
-            <ul class="list-inline mb-3">
-              <!-- post date -->
-              <li class="list-inline-item mr-3 ml-0">August 13, 2018</li>
-              <!-- author -->
-              <li class="list-inline-item mr-3 ml-0">By Jonathon Drew</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-          </div>
-        </div>
-      </article>
-      <!-- blog post -->
-      <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
-          <div class="card-body">
-            <!-- post meta -->
-            <ul class="list-inline mb-3">
-              <!-- post date -->
-              <li class="list-inline-item mr-3 ml-0">August 24, 2018</li>
-              <!-- author -->
-              <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li>
-            </ul>
-            <a href="blog-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-            </a>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-            <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
+            <p class="card-text">{{post.description}}</p>
+            <a href="{{post.url | absolute_url}}" class="btn btn-primary btn-sm">Selengkapnya</a>
           </div>
         </div>
       </article>
@@ -147,127 +48,3 @@ description: Semua konten blog dari simaster
   </div>
 </section>
 <!-- /blogs -->
-
-<!-- footer -->
-<footer>
-  <!-- newsletter -->
-  <div class="newsletter">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
-          <h3 class="text-white">Subscribe Now</h3>
-          <form action="#">
-            <div class="input-wrapper">
-              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
-              <button type="submit" value="send" class="btn btn-primary">Join</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- footer content -->
-  <div class="footer bg-footer section border-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
-          <!-- logo -->
-          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
-          <ul class="list-unstyled">
-            <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
-            <li class="mb-2">+1 (2) 345 6789</li>
-            <li class="mb-2">+1 (2) 345 6789</li>
-            <li class="mb-2">contact@yourdomain.com</li>
-          </ul>
-        </div>
-        <!-- company -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5">COMPANY</h4>
-          <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
-            <li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>
-            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
-            <li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>
-          </ul>
-        </div>
-        <!-- links -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5">LINKS</h4>
-          <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
-            <li class="mb-3"><a class="text-color" href="events.html">Events</a></li>
-            <li class="mb-3"><a class="text-color" href="notice.html">Notice</a></li>
-            <li class="mb-3"><a class="text-color" href="scholarship.html">Scholarship</a></li>
-          </ul>
-        </div>
-        <!-- support -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5">SUPPORT</h4>
-          <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="https://themefisher.com/blog">Forums</a></li>
-            <li class="mb-3"><a class="text-color" href="https://docs.themefisher.com/">Documentation</a></li>
-            <li class="mb-3"><a class="text-color" href="#!">Language</a></li>
-            <li class="mb-3"><a class="text-color" href="#!">Release Status</a></li>
-          </ul>
-        </div>
-        <!-- support -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5">RECOMMEND</h4>
-          <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="https://themefisher.com/">WordPress</a></li>
-            <li class="mb-3"><a class="text-color" href="https://themefisher.com/">LearnPress</a></li>
-            <li class="mb-3"><a class="text-color" href="https://themefisher.com/">WooCommerce</a></li>
-            <li class="mb-3"><a class="text-color" href="https://themefisher.com/">bbPress</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- copyright -->
-  <div class="copyright py-4 bg-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-7 text-sm-left text-center">
-          <p class="mb-0">Copyright &copy;
-            <script>
-              var CurrentYear = new Date().getFullYear()
-              document.write(CurrentYear)
-            </script> 
-            , designed & developed by <a href="https://themefisher.com/" class="text-muted">Themefisher</a>
-          </p>
-        </div>
-        <div class="col-sm-5 text-sm-right text-center">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://facebook.com/themefisher/"><i class="ti-facebook text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://twitter.com/themefisher"><i class="ti-twitter-alt text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://github.com/themefisher"><i class="ti-github text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://instagram.com/themefisher/"><i class="ti-instagram text-primary"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- /footer -->
-
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<!-- slick slider -->
-<script src="plugins/slick/slick.min.js"></script>
-<!-- aos -->
-<script src="plugins/aos/aos.js"></script>
-<!-- venobox popup -->
-<script src="plugins/venobox/venobox.min.js"></script>
-<!-- filter -->
-<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
-<!-- google map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
-<script src="plugins/google-map/gmap.js"></script>
-
-<!-- Main Script -->
-<script src="js/script.js"></script>
-
-</body>
-</html>
