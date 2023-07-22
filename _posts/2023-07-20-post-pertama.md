@@ -1,9 +1,9 @@
 ---
 title: post pertama
 layout: post
-descripttion: ini adalah post pertama simaster
+description: ini adalah post pertama simaster
 image: images/blog/blog-single.jpg
-image-alt: post blog pertam
+image-alt: post blog pertama
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
