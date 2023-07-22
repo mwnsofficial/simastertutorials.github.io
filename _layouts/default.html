@@ -4,7 +4,13 @@
 {% include head.html %}
 </head>
 <body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
 {% include header.html %}
+{% include modal.html %}
 {{content}}
 {% include footer.html %}
 {% include javascript.html %}
