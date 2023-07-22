@@ -2,11 +2,18 @@
 title: Simaster Tutorials
 author: Muhammad Yusuf
 theme-name: Simaster Tutorials
-generator: simaster tutorials
-baseurl: "/"
+generator: jekyll
 keywords: scripts, education, files, githubpages, jekyll&hyde, adsense
+logo: /assets/images/logo.png
+baseurl: "/"
+favicon:
+paginate: 30
 disqus: 'idtechannel'
-
+locale: en_us
+lang: en_us
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
 markdown: kramdown
 kramdown:
   syntax_highlighter_opts:
@@ -14,10 +21,10 @@ kramdown:
 
 ganalytics: UA-113961478-1
 
-whatsapp:
-telegtam:
-messenger:
-email:
+whatsapp: https://wa.me/6287764241047
+telegram: https://t.me/banjarstore
+messenger: https://m.me/myarachma92
+email: myarachma92@gmail.com
 
 # halaman bawaan simaster
 
@@ -35,12 +42,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: false
+      comments: true
 
 # plugin simaster
 
-plugin:
-- jekyll-pagiate
+plugins: 
+- jekyll-paginate
 - jekyll-sitemap
 - jekyll-feed
 - jekyll-seo-tag
