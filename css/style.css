@@ -933,4 +933,13 @@ link:focus,
 .filter-controls li:hover {
   color: #ffbc3b;
 }
+
+pre {
+display: block;
+font-family: monospace;
+white-space: pre;
+margin: 1em 0;
+background-color: black;
+color: white;
+}
 /*# sourceMappingURL=style.css.map */
