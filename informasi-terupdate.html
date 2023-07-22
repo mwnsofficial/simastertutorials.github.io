@@ -43,7 +43,23 @@ date: 2023-07-21
        </div>
      </div>
    </div>
+ {% endfor %}
+    <!-- previous -->
+  {% if page.previous.url %} 
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="{{page.previous.url}}" class="btn btn-sm btn-outline-primary d-sm-none d-inline-block">{{page.previous.title}}</a>
+      </div>
+    </div>
+   {% endif %}
+    <!-- next -->
+    {% if page.next.url %} 
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="{{page.next.url}}" class="btn btn-sm btn-outline-primary d-sm-none d-inline-block">{{page.next.title}}</a>
+      </div>
+    </div>
+   {% endif %}
   </div>
  </div>
- {% endfor %}
 </section>
