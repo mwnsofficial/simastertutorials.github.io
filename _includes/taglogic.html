@@ -1,0 +1,65 @@
+<div class="body-content">
+	<div class="container">
+		<div class="row">
+			<div class="blog-page">
+				<div class="col-xs-12 col-sm-9 col-md-9 rht-col">
+					<div class="blog-post wow fadeInUp">
+<div class="category">
+  <h3 class="page-title">Kategori: {{page.tagName}}</h3>
+  <hr />
+    <div class="page-line"></div>
+      <div id="archives" style="margin:0 0 1.0em;padding:0 0 2.0em;">
+{% assign thisTag = page.tagName %}
+  {% for page in site.pages %}
+    {% for tag in page.tags %}
+      {% if tag == thisTag %}
+          <article class="archive-item">
+            <h3><a href="{{ site.baseurl }}{{ page.url }}">{{page.title}}</a></h3>
+             <div class="blog-post-image">
+              <div class="image"><a href="{{ page.url | absolute_url }}">{% if page.image %}{% include tag-post-image.html image=page.image %}{% endif %}</a></div>
+             </div>
+           <p>{{ page.description }}</p>
+	   <div class="cart clearfix animate-effect">
+            <div class="action">
+             <div class="add-cart-button btn-group">
+              <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-file"></i> </button>
+               <button class="btn btn-primary cart-btn" onclick="window.location.href='{{ page.url | absolute_url }}'" type="button">Selengkap nya</button>
+            </div>
+          </div> 
+        </div>
+          </article>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+{% assign thisTag = page.tagName %}
+  {% for post in site.posts %}
+    {% for tag in post.tags %}
+      {% if tag == thisTag %}
+          <article class="archive-item">
+            <h3><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
+              <div class="blog-post-image">
+               <div class="image"><a href="{{ post.url | absolute_url }}">{% if post.image %}{% include tag-post-image.html image=post.image %}{% endif %}</a></div>
+             </div>
+           Rating <div class="rating rateit-small"></div>
+          <div class="product-price"> Rp <span class="price">{{ post.harga-diskon }} </span> Rp <span class="price-before-discount" style="text-decoration:line-through;">{{ post.harga-asli }}</span></div>
+           <p>{{ post.description }}</p>
+	   <div class="cart clearfix animate-effect">
+            <div class="action">
+             <div class="add-cart-button btn-group">
+              <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+               <button class="btn btn-primary cart-btn" onclick="window.location.href='{{ post.url | absolute_url }}'" type="button">Beli Sekarang</button>
+            </div>
+          </div> 
+        </div>
+	  </article>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
