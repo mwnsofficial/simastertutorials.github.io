@@ -8,9 +8,9 @@ layout: default
       <div class="col-md-8">
         <ul class="list-inline custom-breadcrumb mb-2">
           <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="blog.html">BLog</a></li>
-          <li class="list-inline-item text-white h3 font-secondary nasted">{{page.title}}</li>
+          <li class="list-inline-item text-white h3 font-secondary nasted">{{ page.title }}</li>
         </ul>
-        <p class="text-lighten mb-0">{{page.description}}.</p>
+        <p class="text-lighten mb-0">{{ page.description }}.</p>
       </div>
     </div>
   </div>
@@ -22,7 +22,7 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-12 mb-4">
-        {% if page.image %}<img src="{{page.image}}" alt="{{page.image-alt}}" class="img-fluid w-100">{% endif %}
+        <img src="{{ page.image }}" alt="{{ page.image-alt }}" class="img-fluid w-100">
       </div>
       <div class="col-12">
         <ul class="list-inline">
@@ -69,10 +69,10 @@ layout: default
           <!-- post date -->
           <li class="list-inline-item mr-3 ml-0">{{ post.date | date: "-d %B %Y" }}</li>
           <!-- author -->
-          <li class="list-inline-item mr-3 ml-0">By {{site.author}}</li>
+          <li class="list-inline-item mr-3 ml-0">By {{ site.author }}</li>
         </ul>
         <a href="{{ post.url | absolute_url }}">
-          <h4 class="card-title">{{post.title}}</h4>
+          <h4 class="card-title">{{ post.title }}</h4>
         </a>
         <p class="card-text">{{post.description}}</p>
         <a href="{{ post.url | absolute_url }}" class="btn btn-primary btn-sm">Selengkapnya</a>
@@ -108,15 +108,15 @@ layout: default
           <li class="list-inline-item mr-3 ml-0">By {{site.author}}</li>
         </ul>
         <a href="{{ post.url | absolute_url }}">
-          <h4 class="card-title">{{post.title}}</h4>
+          <h4 class="card-title">{{ post.title }}</h4>
         </a>
-        <p class="card-text">{{post.description}}</p>
+        <p class="card-text">{{ post.description }}</p>
         <a href="{{ post.url | absolute_url }}" class="btn btn-primary btn-sm">Selengkapnya</a>
       </div>
     </div>
   </article>
   {% endfor %}
 </div>
-  </div>
+</div>
 </section>
 <!-- /post terkini -->
