@@ -1,0 +1,122 @@
+---
+layout: default
+---
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb mb-2">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="blog.html">BLog</a></li>
+          <li class="list-inline-item text-white h3 font-secondary nasted">{{page.title}</li>
+        </ul>
+        <p class="text-lighten mb-0">{{page.description}}.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- blog details -->
+<section class="section-sm bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-4">
+        {% if page.image %}<img src="{{page.image}}" alt="{{page.image-alt}}" class="img-fluid w-100">{% endif %}
+      </div>
+      <div class="col-12">
+        <ul class="list-inline">
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><span class="font-weight-bold mr-2">Post:</span>{{site.author}}</li>
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light">{{ page.date | date: "-d %B %Y" }}</li>
+        </ul>
+      </div>
+      <!-- border -->
+      <div class="col-12 mt-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
+      <!-- blog contect -->
+      <div class="col-12 mb-5">
+        <h2>{{page.title}}</h2>
+        {{ content }}
+      </div>
+      
+      <!-- comment box -->
+      <div class="col-12">
+        {% include disqus.html %}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+<!-- post terbaru -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Post Terbaru</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+  <!-- blog post -->
+  {% for post in site.posts limit 3 %}
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      {% if post.image %}{% include post-featured-image.html image=post.image %}{% endif %}
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <li class="list-inline-item mr-3 ml-0">{{ post.date | date: "-d %B %Y" }}</li>
+          <!-- author -->
+          <li class="list-inline-item mr-3 ml-0">By {{site.author}}</li>
+        </ul>
+        <a href="{{ post.url | absolute_url }}">
+          <h4 class="card-title">{{post.title}}</h4>
+        </a>
+        <p class="card-text">{{post.description}}</p>
+        <a href="{{ post.url | absolute_url }}" class="btn btn-primary btn-sm">Selengkapnya</a>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+</div>
+</section>
+<!-- /post terbaru -->
+
+  <!-- post terkini -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Post Terkini</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+  <!-- blog post -->
+  {% for post in site.posts offset:1 limit:3 %}
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      {% if post.image %}{% include post-featured-image.html image=post.image %}{% endif %}
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <li class="list-inline-item mr-3 ml-0">{{ post.date | date: "-d %B %Y" }}</li>
+          <!-- author -->
+          <li class="list-inline-item mr-3 ml-0">By {{site.author}}</li>
+        </ul>
+        <a href="{{ post.url | absolute_url }}">
+          <h4 class="card-title">{{post.title}}</h4>
+        </a>
+        <p class="card-text">{{post.description}}</p>
+        <a href="{{ post.url | absolute_url }}" class="btn btn-primary btn-sm">Selengkapnya</a>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+  </div>
+</section>
+<!-- /post terkini -->
