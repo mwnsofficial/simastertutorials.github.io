@@ -2,7 +2,7 @@
 title: Mengatur Singkron Jam
 layout: post
 description: Cara mengatur singkronisasi jam pada opewnrt
-image: images/blog/blog-single.jpg
+image: images/blog/mengatur-singkron-jam.jpg
 image-alt: mengatur singkron jam
 tags: [openwrt]
 ---
