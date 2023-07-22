@@ -1,4 +1,39 @@
 ---
 layout: default
 ---
-{{content}}
+<!-- page title -->
+<section class="page-title-section overlay" data-background="/images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb mb-2">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="/blog.html">BLog</a></li>
+          <li class="list-inline-item text-white h3 font-secondary nasted">{{ page.title }}</li>
+        </ul>
+        <p class="text-lighten mb-0">{{ page.description }}.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+<!-- page details -->
+<section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex">
+            <div class="text-center mr-4">
+              <div class="p-4 bg-primary text-white">
+                  {{page.date | date: "<span class="h2 d-block">%d</span> %B %Y }}
+              </div>
+            </div>
+        <!-- notice content -->
+            <div>
+          <h3 class="mb-4">{{page.title}}</h3>
+        {{content}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
