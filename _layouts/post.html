@@ -27,7 +27,7 @@ layout: default
       <div class="col-12">
         <ul class="list-inline">
           <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><span class="font-weight-bold mr-2">Post:</span>{{site.author}}</li>
-          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light">{{ page.date | date: "-d %B %Y" }}</li>
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light">{{ page.date | date: "%d %B %Y" }}</li>
         </ul>
       </div>
       <!-- border -->
@@ -67,7 +67,7 @@ layout: default
         <!-- post meta -->
         <ul class="list-inline mb-3">
           <!-- post date -->
-          <li class="list-inline-item mr-3 ml-0">{{ post.date | date: "-d %B %Y" }}</li>
+          <li class="list-inline-item mr-3 ml-0">{{ post.date | date: "%d %B %Y" }}</li>
           <!-- author -->
           <li class="list-inline-item mr-3 ml-0">By {{ site.author }}</li>
         </ul>
@@ -103,7 +103,7 @@ layout: default
         <!-- post meta -->
         <ul class="list-inline mb-3">
           <!-- post date -->
-          <li class="list-inline-item mr-3 ml-0">{{ post.date | date: "-d %B %Y" }}</li>
+          <li class="list-inline-item mr-3 ml-0">{{ post.date | date: "%d %B %Y" }}</li>
           <!-- author -->
           <li class="list-inline-item mr-3 ml-0">By {{site.author}}</li>
         </ul>
