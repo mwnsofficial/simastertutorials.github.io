@@ -1,0 +1,48 @@
+# SEO
+title: Simaster Tutorials
+author: Muhammad Yusuf
+theme-name: Simaster Tutorials
+generator: simaster tutorials
+url: "https://mwns.my.id"
+baseurl: "/"
+keywords: scripts, education, files, githubpages, jekyll&hyde, adsense
+disqus: 'idtechannel'
+
+markdown: krmadown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+
+ganalytics: UA-113961478-1
+
+whatsapp:
+telegtam:
+messenger:
+email:
+
+# halaman bawaan simaster
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: false
+
+# plugin simaster
+
+plugin:
+- jekyll-pagiate
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-archives
