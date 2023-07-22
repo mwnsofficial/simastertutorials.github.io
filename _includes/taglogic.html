@@ -34,7 +34,7 @@
               <!-- author -->
               <li class="list-inline-item mr-3 ml-0">By {{site.author}}</li>
             </ul>
-            <a href="blog-single.html">
+            <a href="{{page.url | absolute_url}}"">
               <h4 class="card-title">{{page.title}}</h4>
             </a>
             <p class="card-text">{{page.description}}</p>
@@ -43,7 +43,6 @@
         </div>
       </article>
     </div>
- </article>
          {% endif %}
        {% endfor %}
      {% endfor %}
@@ -64,7 +63,7 @@
           <!-- author -->
           <li class="list-inline-item mr-3 ml-0">By {{site.author}}</li>
         </ul>
-        <a href="blog-single.html">
+        <a href="{{post.url | absolute_url}}"">
           <h4 class="card-title">{{post.title}}</h4>
         </a>
         <p class="card-text">{{post.description}}</p>
@@ -73,7 +72,6 @@
     </div>
   </article>
 </div>
- </article>
      {% endif %}
    {% endfor %}
  {% endfor %}
