@@ -28,7 +28,7 @@ layout: default
         <ul class="list-inline">
           <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><span class="font-weight-bold mr-2">Post:</span>{{site.author}}</li>
           <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light">{{ page.date | date: "%d %B %Y" }}</li>
-          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><i class="ti-book mr-2"></i>{% if page.tags != null %}{% assign projectTags = site.data.tags.allowed-tags %}{% for tag in page.tags %}{% if projectTags contains tag %}<a href="/{{ "tag_" | append: tag | append: ".html"}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}{% endif %}{% endfor %}{% endif %}="</li>
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><i class="ti-book mr-2"></i>{% if page.tags != null %}{% assign projectTags = site.data.tags.allowed-tags %}{% for tag in page.tags %}{% if projectTags contains tag %}<a href="/{{ "tag_" | append: tag | append: ".html"}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}{% endif %}{% endfor %}{% endif %}</li>
         </ul>
       </div>
       <!-- border -->
