@@ -3,6 +3,7 @@ allowed-tags:
   - passwall
   - openwrt
   - mikrotik
+  - armbian
   - router
   - modem
   - antena
