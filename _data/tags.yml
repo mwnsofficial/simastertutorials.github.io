@@ -12,3 +12,5 @@ allowed-tags:
   - rule
   - script
   - port
+  - freeconfig
+  - premiumconfig
