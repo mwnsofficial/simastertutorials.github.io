@@ -14,7 +14,7 @@ hal yang pertama kita lakukan adalah menginstall beberapa repository terlebih da
 Silahkan buka terminal emulator pada masing masing perangkat anda. Kemudian buatkan perintah di bawah ini:
 
 ```
-sudo apt upddate
+sudo apt update
 ```
 
 Kemudian kita install
