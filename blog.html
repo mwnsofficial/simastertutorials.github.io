@@ -19,33 +19,33 @@ description: Semua konten blog dari simaster
 </section>
 <!-- /page title -->
 
-<!-- blogs -->
-<section class="section">
+<!-- blog -->
+<section class="section pt-0">
   <div class="container">
-   {% for post in site.posts %} 
-    <div class="row">
-      <!-- blog post -->
-      <article class="col-lg-4 col-sm-6 mb-5">
-        <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-          {% if post.image %}{% include post-featured-image.html image=post.image %}{% endif %}
-          <div class="card-body">
-            <!-- post meta -->
-            <ul class="list-inline mb-3">
-              <!-- post date -->
-              <li class="list-inline-item mr-3 ml-0">{{ post.date | date: "%d %B %Y" }}</li>
-              <!-- author -->
-              <li class="list-inline-item mr-3 ml-0">By {{site.author}}</li>
-            </ul>
-            <a href="{{post.url | absolute_url}}">
-              <h4 class="card-title">{{post.title}}</h4>
-            </a>
-            <p class="card-text">{{post.description}}</p>
-            <a href="{{post.url | absolute_url}}" class="btn btn-primary btn-sm">Selengkapnya</a>
-          </div>
-        </div>
-      </article>
+    <div class="row justify-content-center">
+  <!-- blog post -->
+{% for post in site.posts %}
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      {% if post.image %}{% include post-featured-image.html image=post.image %}{% endif %}
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <li class="list-inline-item mr-3 ml-0">{{ post.date | date: "%d %B %Y" }}</li>
+          <!-- author -->
+          <li class="list-inline-item mr-3 ml-0">By {{site.author}}</li>
+        </ul>
+        <a href="{{post.url | absolute_url}}">
+          <h4 class="card-title">{{post.title}}</h4>
+        </a>
+        <p class="card-text">{{post.description}}</p>
+        <a href="{{post.url | absolute_url}}" class="btn btn-primary btn-sm">Selengkapnya</a>
+      </div>
     </div>
-  {% endfor %}
+  </article>
+{% endfor %}
+</div>
   </div>
 </section>
-<!-- /blogs -->
+<!-- /blog -->
