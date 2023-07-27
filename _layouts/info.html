@@ -31,6 +31,7 @@ layout: default
           <!-- notice content -->
           <div>
             <h3 class="mb-4">{{ page.title }}</h3>
+            <h5 class="mb-4">{% if page.tags != null %}{% assign projectTags = site.data.tags.allowed-tags %}{% for tag in page.tags %}{% if projectTags contains tag %}<a href="/{{ "tag_" | append: tag | append: ".html"}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}{% endif %}{% endfor %}{% endif %}</h5>
             <p>{{content}}</p>
             <a href="{{ page.link }}" class="btn btn-primary">Simak Disini</a>
           </div>
