@@ -1,7 +1,7 @@
 ---
 title: Jasa Remote Yusuf
 layout: marketplaces
-image: /images/teachers/yusuf.jpg
+image: images/teachers/yusuf.jpg
 category: jasaremote, semua
 harga: 100000
 link: https://wa.me/6287764241047
