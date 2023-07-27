@@ -13,27 +13,27 @@ hal yang pertama kita lakukan adalah menginstall beberapa repository terlebih da
 
 Silahkan buka terminal emulator pada masing masing perangkat anda. Kemudian buatkan perintah di bawah ini:
 
-<pre rel="HTML" class="code-box"><code>
+```
 sudo apt update
-</code></pre>
+```
 
 Kemudian kita install
 
-<pre rel="HTML" class="code-box"><code>
+```
 sudo apt-get install hostapd isc-dhcp-server
-</code></pre>
+```
 
 Tunggu hingga selesai dan tidak ada kendala apa pun.
 
 Kemudian buat perintah kembali
 
-<pre rel="HTML" class="code-box"><code>
+```
 sudo nano /etc/default/isc-dhcp-server
-</code></pre>
+```
 
 nanti isikan seperti di bawah ini
 
-<pre rel="HTML" class="code-box"><code>
+```
 # Defaults for isc-dhcp-server (sourced by /etc/init.d/isc-dhcp-server)
 
 # Path to dhcpd's config file (default: /etc/dhcp/dhcpd.conf).
@@ -52,7 +52,7 @@ nanti isikan seperti di bawah ini
 #	Separate multiple interfaces with spaces, e.g. "eth0 eth1".
 INTERFACESv4="wlan0"
 INTERFACESv6="wlan0"
-</code></pre>
+```
 
 Untuk interface hotspot kalian pastikan sama dengan settingan di advance connection di armbian anda.
 
@@ -62,7 +62,7 @@ Itu adalah langkah awal untuk setting interfaces di armbian anda.
 
 Kemudian buat perintah kembali untuk setting dhcp server nya
 
-<pre rel="HTML" class="code-box"><code>
+```
 sudo nano /etc/dhcp/dhcpd.conf
 </code></pre>
 
@@ -180,7 +180,7 @@ subnet 192.168.10.0 netmask 255.255.255.0 {
 #    range 10.0.29.10 10.0.29.230;
 #  }
 #}
-</code></pre>
+```
 
 Kalo anda ingin IP DHCP yang berbeda boleh silahkan namun samakan dengan topologi anda.
 
@@ -188,13 +188,13 @@ Jika sudah mantap pada pilihan, silahkan anda simpan dengam menekan kembali tomb
 
 Dan langkah di bawah ini adalah langkah terakhir settingan kita
 
-<pre rel="HTML" class="code-box"><code>
+```
 sudo nano /etc/hostapd/hostapd.conf
-</code></pre>
+```
 
 Lalu pada driver, interface, ssid, hw mode, channel, wpa passphrase atau password dan lain nya samakan saja dengan settingan hotspot wifi kalian.
 
-<pre rel="HTML" class="code-box"><code>
+```
 interface=wlan0
 driver=rtl8189fs
 ssid=simaster
@@ -208,7 +208,7 @@ wpa_passphrase=scatternet
 wpa_key_mgmt=WPA-PSK
 wpa_pairwise=TKIP
 rsn_pairwise=CCMP
-</code></pre>
+```
 
 Sampai disini kita sudah selesai setting bagian penting untuk management hotspot linux armbian di stb hg680p atau b860h anda.
 
@@ -216,9 +216,9 @@ tinggal membuat interface anda di menu lalu tekan advanced connection
 
 ketikkan di terminal
 
-<pre rel="HTML" class="code-box"><code>
+```
 nmtui
-</code></pre>
+```
 
 lalu buatlah interface baru untuk di jadikan hotspot dengan menekan tombol `Add`.
 
@@ -230,8 +230,8 @@ Untuk MTU boleh default atau pun 1500 ya bro.
 
 Dan perjalanan kita akan berakhir dengan membuat perintah
 
-<pre rel="HTML" class="code-box"><code>
+```
 sudo systemctl start hostapd
-</code></pre>
+```
 
 Ok bro, sampai disini dulu tutorial yang `Simaster Tutorials` berikan dan semoga bermanfaat.
