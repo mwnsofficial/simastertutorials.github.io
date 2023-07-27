@@ -1,0 +1,71 @@
+---
+title: Kumpulan Master
+layout: default
+description: Semua para master yang sudah simaster rangkumkan di halaman ini
+---
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb mb-2">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="index.html">Beranda</a></li>
+          <li class="list-inline-item text-white h3 font-secondary nasted">{{ page.title }}</li>
+        </ul>
+        <p class="text-lighten mb-0">{{ page.description }}.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+      {% assign thisTag = page.tagName %}
+    {% for page in site.pages %}
+  {% for tag in page.tags %}
+{% if tag == thisTag %}
+<!-- seller -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <!-- teacher category list -->
+        <ul class="list-inline text-center filter-controls mb-5">
+          <li class="list-inline-item m-3 text-uppercase active" data-filter="semua">SEMUA</li>
+          <li class="list-inline-item m-3 text-uppercase" data-filter="stb">STB</li>
+          <li class="list-inline-item m-3 text-uppercase" data-filter="mikrotik">MIKROTIK</li>
+          <li class="list-inline-item m-3 text-uppercase" data-filter="akunvpn">AKUN VPN</li>
+          <li class="list-inline-item m-3 text-uppercase" data-filter="handphone">HANDPHONE</li>
+          <li class="list-inline-item m-3 text-uppercase" data-filter="modem">MODEM</li>
+          <li class="list-inline-item m-3 text-uppercase" data-filter="router">ROUTER</li>
+	  <li class="list-inline-item m-3 text-uppercase" data-filter="antena">ANTENA</li>
+          <li class="list-inline-item m-3 text-uppercase" data-filter="jasaremote">JASA REMOTE</li>
+        </ul>
+      </div>
+    </div>
+    <!-- teacher list -->
+    <div class="row filtr-container">
+      <!-- teacher -->
+      <div data-category="{{ page.category }}" class="col-lg-4 col-sm-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          {% if page.image %}{% include page-featured-image.html image=page.image %}{% endif %}
+          <div class="card-body">
+            <a href="{{page.url | absolute_url}}">
+              <h4 class="card-title">{{ page.title }}</h4>
+            </a>
+            <p><b>Rp</b> {{ page.harga }}</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="{{ page.facebook }}"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="{{ page.youtube }}"><i class="ti-youtube"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="{{ page.github }}"><i class="ti-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /seller -->
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+    </div>
+  </div>
+</section>
+<!-- /teachers -->
