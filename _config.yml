@@ -48,6 +48,13 @@ defaults:
     values:
       layout: "post"
       comments: true
+  -
+    scope:
+      path: ""
+      type: "infos"
+    values:
+      layout: "info"
+      comments: true
 
 # plugin simaster
 
