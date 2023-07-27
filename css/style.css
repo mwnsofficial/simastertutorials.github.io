@@ -926,46 +926,39 @@ link:focus,
   color: #ffbc3b;
 }
 
-//---codebox style----//
-.code-box {
+/* --- ini khusus coding --- */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+pre[class*="language-"] {
   position: relative;
-  background-color: #1b1b1b;
-  color: #fff;
-  border: 1px solid rgba(155,155,155,0.3);
-  font-family: Monospace;
-  font-size: 15px;
-  line-height: 1.5em;
-  border-radius: 6px;
+  overflow: auto;
+
+  /* make space  */
+  margin: 5px 0;
+  padding: 1.75rem 0 1.75rem 1rem;
+  border-radius: 10px;
 }
 
-//---add scrollbar----//
-pre code {
-  white-space: pre;
-  overflow-x: scroll;
-  display: block;
-  max-width: 100%;
-  min-width: 100px;
-  padding: 10px
-}
-
-//---scrollbar style----//
-pre code::-webkit-scrollbar {
-  height: 8px
-}
-pre code::-webkit-scrollbar-thumb {
-  border-radius: 6px;
-  background-color: #646464
-}
-
-//---codebox label (html,css,javascript dan jquery) style----//
-pre[rel]:not([rel=""]):before {
-  content: attr(rel);
-  font-weight: bold;
-  background: rgba(0, 0, 0, 0.72);
-  border-radius: 0 6px;
+pre[class*="language-"] button {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 4px;
-  color: #ff7a18;
+  top: 5px;
+  right: 5px;
+
+  font-size: 0.9rem;
+  padding: 0.15rem;
+  background-color: #828282;
+
+  border: ridge 1px #7b7b7c;
+  border-radius: 5px;
+  text-shadow: #c4c4c4 0 0 2px;
+}
+
+pre[class*="language-"] button:hover {
+  cursor: pointer;
+  background-color: #bcbabb;
 }
