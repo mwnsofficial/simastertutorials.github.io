@@ -4,6 +4,7 @@ layout: info
 description: Untuk saat ini semua config script simaster sedang melakukan peningkatan
 link: 
 permalink: "/peningkatan-config-script.html"
+tags: [info]
 ---
 Ada banyak pembenahan pada config script pada config simaster untuk mode script saat ini tanpa rule dan rule provider.
 
