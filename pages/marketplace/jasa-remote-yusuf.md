@@ -2,6 +2,7 @@
 title: Jasa Remote Yusuf
 layout: page
 image: 
+category: jasaremote
 harga: 100.000
 link: https://wa.me/6287764241047
 facebook: https://facebook.com/myarachma92
