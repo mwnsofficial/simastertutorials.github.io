@@ -64,11 +64,11 @@ Kemudian buat perintah kembali untuk setting dhcp server nya
 
 ```
 sudo nano /etc/dhcp/dhcpd.conf
-</code></pre>
+```
 
 lalu isikan seperti di bawah ini
 
-<pre rel="HTML" class="code-box"><code>
+```
 # dhcpd.conf
 #
 # Sample configuration file for ISC dhcpd
