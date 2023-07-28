@@ -23,6 +23,12 @@ layout: default
         <div class="col-12">
           <div class="d-flex">
         {{content}}
+{% if page.previous.url %}
+  <a href="{{page.next.url}}" class="btn btn-primary btn-sm">&laquo;&nbsp; Previous Info</a><br>
+{% endif %}
+{% if page.next.url %}
+  <a href="{{page.next.url}}" class="btn btn-primary btn-sm">Next Info &nbsp;&raquo;</a><br>
+{% endif %}
         </div>
       </div>
     </div>
