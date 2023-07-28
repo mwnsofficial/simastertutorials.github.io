@@ -27,20 +27,8 @@ date: 2023-07-21
     </div>
    {% endfor %}
 
-    {% for page in site.pages %}
-        {% if page_index0 == forloop.index %}
-            {% assign next_page = page.url %}
-        {% endif %}
-        {% if page_index1 == forloop.index0 %}
-            {% assign prev_page = page.url %}
-        {% endif %}
-    {% endfor %}
-    {% if next_page %}
-        <a href="{{ next_page }}">Next Page</a> <br>
-    {% endif %}
-    {% if prev_page %}
-        <a href="{{ prev_page }}">Previous Page</a> <br>
-    {% endif %}
+      <a href="{{ page.next | absolute_url }}" class="btn btn-primary btn-sm">Selanjutnya</a><br>
+      <a href="{{ page.previous | absolute_url }}" class="btn btn-primary btn-sm">Sebelumnya</a><br>
 
   </div>
  </div>
