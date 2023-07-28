@@ -1,6 +1,6 @@
 ---
-title: Informasi Terupdate Simaster Tutorials
-layout: page
+title: Informasi Terupdate
+layout: default
 description: Halaman ini khusus untuk pemberitahuan update config, rule, script, port, berlangganan config premium, config online, dan lainnya
 date: 2023-07-21
 ---
@@ -26,8 +26,12 @@ date: 2023-07-21
      </div>
     </div>
    {% endfor %}
-            <a href="{{ previous.page }}" class="btn btn-primary btn-sm">Sebelumnya</a><br>
-      <a href="{{ next.page }}" class="btn btn-primary btn-sm">Selanjutnya</a><br>
+{% if page.previous.url %}
+  <a href="{{page.next.url}}" class="btn btn-primary btn-sm">&laquo;&nbsp; Previous Info</a><br>
+{% endif %}
+{% if page.next.url %}
+  <a href="{{page.next.url}}" class="btn btn-primary btn-sm">Next Info &nbsp;&raquo;</a><br>
+{% endif %}
   </div>
  </div>
 </section>
