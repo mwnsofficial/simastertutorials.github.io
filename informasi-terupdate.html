@@ -26,11 +26,8 @@ date: 2023-07-21
      </div>
     </div>
    {% endfor %}
-  </div>
- </div>
-</section>
-  
-    {% for post in site.categories.photos %}
+
+    {% for page in site.pages %}
         {% if page.url == page.url %}
             {% assign page_index0 = forloop.index0 %}
             {% assign page_index1 = forloop.index %}
@@ -50,3 +47,7 @@ date: 2023-07-21
     {% if prev_page %}
         <a href="{{ prev_page }}">Previous Page</a> <br>
     {% endif %}
+
+  </div>
+ </div>
+</section>
