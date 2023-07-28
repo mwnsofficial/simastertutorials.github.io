@@ -9,7 +9,7 @@ date: 2023-07-21
   <div class="container">
     <div class="row justify-content-center">
     <!-- course item -->
-      {% for page in site.pages limit:10 %}
+      {% for page in site.pages limit:6 %}
        <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card p-0 border-primary rounded-0 hover-shadow">
           <div class="card-body">
@@ -30,15 +30,23 @@ date: 2023-07-21
  </div>
 </section>
   
-    <!-- previous -->
-  {% if page.previous.url %} 
-    <div class="card-body">
-      <a href="{{ page.previous.url }}" class="btn btn-primary btn-sm">{{page.previous.title}}</a>
-    </div>
-   {% endif %}
-    <!-- next -->
-    {% if page.next.url %} 
-    <div class="card-body">
-      <a href="{{ page.next.url }}" class="btn btn-primary btn-sm">{{page.next.title}}</a>
-    </div>
-   {% endif %}
+    {% for post in site.categories.photos %}
+        {% if page.url == page.url %}
+            {% assign page_index0 = forloop.index0 %}
+            {% assign page_index1 = forloop.index %}
+        {% endif %}
+    {% endfor %}
+    {% for post in site.categories.photos %}
+        {% if page_index0 == forloop.index %}
+            {% assign next_page = page.url %}
+        {% endif %}
+        {% if page_index1 == forloop.index0 %}
+            {% assign prev_page = page.url %}
+        {% endif %}
+    {% endfor %}
+    {% if next_page_ %}
+        <a href="{{ next_page }}">Next Page</a> <br>
+    {% endif %}
+    {% if prev_page %}
+        <a href="{{ prev_page }}">Previous Page</a> <br>
+    {% endif %}
