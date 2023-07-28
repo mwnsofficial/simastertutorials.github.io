@@ -25,11 +25,9 @@ date: 2023-07-21
       </div>
      </div>
     </div>
+      <a href="{{ page.previous }}" class="btn btn-primary btn-sm">Sebelumnya</a><br>
+      <a href="{{ page.next }}" class="btn btn-primary btn-sm">Selanjutnya</a><br>
    {% endfor %}
-
-      <a href="{{ page.next | absolute_url }}" class="btn btn-primary btn-sm">Selanjutnya</a><br>
-      <a href="{{ page.previous | absolute_url }}" class="btn btn-primary btn-sm">Sebelumnya</a><br>
-
   </div>
  </div>
 </section>
