@@ -5,7 +5,7 @@ theme-name: Simaster Tutorials
 generator: jekyll
 keywords: scripts, education, files, githubpages, jekyll&hyde, adsense
 logo: /assets/images/logo.png
-baseurl: "/"
+baseurl: "simastertutorials.github.io"
 favicon:
 paginate: 30
 disqus: 'idtechannel'
